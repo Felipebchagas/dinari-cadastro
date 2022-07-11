@@ -10,8 +10,8 @@
   - Verifica se todo o formulário está preenchido.
   - Verifica se CPF é válido.
   - Verifica se e-mail é válido.
-  - Validar se data de nascimento é válida.
-  - Validar se senha e confirmação de senha são iguais.
+  - Verifica se data de nascimento é válida.
+  - Verifica se senha e confirmação de senha são iguais.
 
 #### Ao clicar no botão Cancelar:
 - Limpa os dados do formulário.
