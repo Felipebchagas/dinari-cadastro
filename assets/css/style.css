@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+
+    --container-color: #272424;
+    --primary-color: white;
+    --body-font: 'Montserrat', sans-serif;
+    --sbold-font-weight: 600;
+    --green-scrollbar-thumb: #37993f;
+    --gray-scrollbar: #e6e6e6c7;
+    --input-border: #E3E3E3;
+    --gradient: linear-gradient(to right, #0ee951, #00dabf);
+    --lightgreen: #12C075;
+    --mustard: #E6B40A;
+}
+
+
+/*=============== BASE ===============*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--primary-color)
+}
+
+/*=============== SCROLL BAR ===============*/
+
+::-webkit-scrollbar {
+    background: var(--gray-scrollbar);
+    width: 0.8rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--green-scrollbar-thumb);
+    width: 20px;
+}
+
+/*=============== CALENDAR ICON ===============*/
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+
+
+.card {
+    background-color: var(--container-color);
+}
+
+.d-xl-block{
+    background: url('../images/img.jpg');
+}
+
+label {
+    font-family: var(--body-font);
+    font-weight: var(--sbold-font-weight);
+}
+
+input {
+    background: transparent !important;
+    color: white !important;
+    border: none !important;
+    border-bottom: 2px solid var(--input-border) !important;
+    border-radius: 0 !important;
+}
+
+.btn {
+    color: var(--primary-color);
+    background: transparent;
+    padding: 10px 30px;
+    border-width: 2px;
+    border-image-slice: 1;
+    border-image-source: var(--gradient);
+}
+
+.btn:hover {
+    color: var(--lightgreen);
+
+}
+
+.invalid-feedback {
+    color: var(--mustard);
+    font-family: var(--body-font);
+    
+}
+
+.alert {
+    display: none;
+    position: fixed;
+    right: 0;
+    z-index: 1;
+    transition: .05s ease-in;
+}
+
+
+/*=============== BREAKPOINTS ===============*/
+/* Para dispositivos pequenos*/
+
+@media screen and (max-width: 360px) {
+
+    .s-devices{
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+    }
+
+    button:first-child {
+        order: 1;
+    }
+           
+}

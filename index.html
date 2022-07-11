@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+
+    <div class="alert alert-success" id="regis_success" role="alert">
+        Cadastro Enviado!
+    </div>
+    <section class="h-100 bg-dark">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col">
+                    <div class="card card-registration my-4">
+                        <form class="needs-validation" id="forms" novalidate>
+                            <div class="row g-0">
+                                <div class="col-xl-6 d-none d-xl-block">
+
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="card-body p-md-5">
+                                        <div class="d-flex justify-content-center">
+                                            <img src="assets/images/logo.png" alt="dinari_logo">
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 mb-4">
+                                                <div class="form-outline">
+                                                    <label class="form-label" for="name">Nome*</label>
+                                                    <input type="text" id="nome" class="form-control form-control-lg"
+                                                        placeholder="Seu nome" required />
+                                                    <div class="invalid-feedback">
+                                                        Nome inválido
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-4">
+                                                <div class="form-outline">
+                                                    <label class="form-label" for="cpf">CPF*</label>
+                                                    <input type="text" id="cpf" class="form-control form-control-lg"
+                                                        placeholder="XXX.XXX.XXX-XX" pattern=".{14,14}" required />
+                                                    <div class="invalid-feedback">
+                                                        CPF inválido
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-outline mb-4">
+                                            <label class="form-label" for="email">E-mail*</label>
+                                            <input type="email" id="email" class="form-control form-control-lg"
+                                                placeholder="email@email.com" required />
+                                            <div class="invalid-feedback" id="emailcheck">
+                                                E-mail inválido
+                                            </div>
+                                        </div>
+                                        <div class="form-outline mb-4">
+                                            <label class="form-label" for="data_nasc">Data de nascimento*</label>
+                                            <input type="date" id="data_nasc" class="form-control form-control-lg"
+                                                required />
+                                            <div class="invalid-feedback">
+                                                Data inválida
+                                            </div>
+                                        </div>
+                                        <div class=" mb-4 py-2">
+                                            <h6 class="mb-0 me-4">Gênero*</h6>
+                                            <div class="form-check mb-0 me-4">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="femaleGender" value="option1" required />
+                                                <label class="form-check-label" for="femaleGender">Feminino</label>
+                                            </div>
+                                            <div class="form-check mb-0 me-4">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="maleGender" value="option2" required />
+                                                <label class="form-check-label" for="maleGender">Masculino</label>
+                                            </div>
+                                            <div class="form-check mb-0">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="otherGender" value="option3" required />
+                                                <label class="form-check-label" for="otherGender">Não
+                                                    Especificado</label>
+                                                <div class="invalid-feedback">
+                                                    Valor inválido
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-outline mb-4">
+                                            <label class="form-label" for="pass">Senha*</label>
+                                            <input type="password" id="password" class="form-control form-control-lg"
+                                                pattern=".{6,}" placeholder="Senha" required />
+                                            <div class="invalid-feedback" id="passcheck">
+                                                Senha inválida
+                                            </div>
+                                        </div>
+                                        <div class="form-outline mb-4">
+                                            <label class="form-label" for="re_pass">Confirme a Senha</label>
+                                            <input type="password" id="re_password" class="form-control form-control-lg"
+                                                placeholder="Confirmar" required />
+                                            <div class="invalid-feedback" id="conpasscheck">
+                                                Confirmação de senha inválida
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between pt-3 s-devices">
+                                            <button type="reset" class="btn btn-lg" id="reset">Cancelar</button>
+                                            <button type="submit" class="btn btn-lg" id="submit">Cadastrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
