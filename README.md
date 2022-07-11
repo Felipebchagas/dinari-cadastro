@@ -14,7 +14,7 @@
   - Validar se senha e confirmação de senha são iguais.
 
 Caso alguma validação falhe, informa onde falhou.
-Passando em todas as validações, informa mensagem
+Passando em todas as validações, exibe mensagem
 informando "Cadastro Enviado".
   
   
