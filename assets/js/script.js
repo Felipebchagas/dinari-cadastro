@@ -119,7 +119,7 @@ $(document).ready(function () {
       }
     });
     
-    if (validateEmail() == false || validateCPF() == false || validateConfirmPassword() == false) {
+    if (validateEmail() == false || validateCPF() == false || validatePassword() == false || validateConfirmPassword() == false) {
       return false;
     }
     else if (empty) {
